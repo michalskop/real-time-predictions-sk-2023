@@ -1,0 +1,28 @@
+strana,mandáty,počet,počty mandátov
+SMER-SD,Takmer isté,30,Takmer isté: 30
+HLAS-SD,Takmer isté,22,Takmer isté: 22
+PS,Takmer isté,19,Takmer isté: 19
+OĽaNO,Takmer isté,13,Takmer isté: 13
+KDH,Takmer isté,11,Takmer isté: 11
+SNS,Takmer isté,0,Takmer isté: 0
+Aliancia,Takmer isté,0,Takmer isté: 0
+SaS,Takmer isté,0,Takmer isté: 0
+Republika,Takmer isté,0,Takmer isté: 0
+SMER-SD,Pravdepodobné,8,Pravdepodobné: 30+8
+HLAS-SD,Pravdepodobné,6,Pravdepodobné: 22+6
+PS,Pravdepodobné,6,Pravdepodobné: 19+6
+OĽaNO,Pravdepodobné,3,Pravdepodobné: 13+3
+KDH,Pravdepodobné,3,Pravdepodobné: 11+3
+SNS,Pravdepodobné,10,Pravdepodobné: 0+10
+Aliancia,Pravdepodobné,10,Pravdepodobné: 0+10
+SaS,Pravdepodobné,9,Pravdepodobné: 0+9
+Republika,Pravdepodobné,0,Pravdepodobné: 0+0
+SMER-SD,Menej pravdepodobné,10,Menej pravdepodobné: 30+8+10
+HLAS-SD,Menej pravdepodobné,8,Menej pravdepodobné: 22+6+8
+PS,Menej pravdepodobné,7,Menej pravdepodobné: 19+6+7
+OĽaNO,Menej pravdepodobné,6,Menej pravdepodobné: 13+3+6
+KDH,Menej pravdepodobné,5,Menej pravdepodobné: 11+3+5
+SNS,Menej pravdepodobné,3,Menej pravdepodobné: 0+10+3
+Aliancia,Menej pravdepodobné,2,Menej pravdepodobné: 0+10+2
+SaS,Menej pravdepodobné,3,Menej pravdepodobné: 0+9+3
+Republika,Menej pravdepodobné,11,Menej pravdepodobné: 0+0+11
