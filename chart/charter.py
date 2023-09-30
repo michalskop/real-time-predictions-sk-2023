@@ -89,7 +89,7 @@ if (coalitions['hi'].sum() > 100):
   chart3_mids['diff'] = chart3_mids['median'] - chart3_mids['lo']
   chart3_mids = chart3_mids.rename(columns={'name': 'strana', 'diff': 'počet'})
   chart3_mids['mandáty'] = 'Pravdepodobné'
-  chart3_mids['počty mandátov'] = 'Pravdepodobné: ' + chart3_mids['lo'].astype('str') + '+' + chart3_mids['počet'].astype('str')
+  chart3_mids['počty mandátov'] = 'Pravdepodobné: ' + chart3_mids['median'].astype('str') + ' (' + chart3_mids['lo'].astype('str') + '+' + chart3_mids['počet'].astype('str') + ')'
   chart3_mid = chart3_mids.loc[:, ['strana', 'mandáty', 'počet', 'počty mandátov']]
 
   chart3_hi = chart3.copy()
@@ -98,7 +98,7 @@ if (coalitions['hi'].sum() > 100):
   chart3_his['diff2'] = chart3_his['median'] - chart3_his['lo']
   chart3_his = chart3_his.rename(columns={'name': 'strana', 'diff': 'počet'})
   chart3_his['mandáty'] = 'Menej pravdepodobné'
-  chart3_his['počty mandátov'] = 'Menej pravdepodobné: ' + chart3_his['lo'].astype('str') + '+' + chart3_his['diff2'].astype('str') + '+' + chart3_his['počet'].astype('str')
+  chart3_his['počty mandátov'] = 'Menej pravdepodobné: ' + chart3_his['median'].astype('str') + ' (' + chart3_his['lo'].astype('str') + '+' + chart3_his['diff2'].astype('str') + '+' + chart3_his['počet'].astype('str') + ')'
   chart3_hi = chart3_his.loc[:, ['strana', 'mandáty', 'počet', 'počty mandátov']]
 
   chart3 = pd.concat([chart3_lo, chart3_mid, chart3_hi], ignore_index=True)
