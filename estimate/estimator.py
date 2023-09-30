@@ -406,10 +406,13 @@ counted_percentage = current_overview['P_OKRSOK'].sum() / initial_weights['polli
 current_slope = slope[slope['x'] >= counted_percentage].head(1)['y'].values[0]
 
 # correct results
-results = results.merge(initial_estimates.loc[:, ['id', 'slope']], on='id', how='left')
-results['sloped_percentage'] = results['percentage'] * (1 + results['slope'] * current_slope)
-# recalculate to 100%
-results['sloped_percentage'] = results['sloped_percentage'] / results['sloped_percentage'].sum() * 100
+if counted_percentage > 0:
+  results = results.merge(initial_estimates.loc[:, ['id', 'slope']], on='id', how='left')
+  results['sloped_percentage'] = results['percentage'] * (1 + results['slope'] * current_slope)
+  # recalculate to 100%
+  results['sloped_percentage'] = results['sloped_percentage'] / results['sloped_percentage'].sum() * 100
+else:
+  results['sloped_percentage'] = results['percentage']
 
 # ADD INTERVALS
 # note: adding intervals1 to both results and results_sloped
