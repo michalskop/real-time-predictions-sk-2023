@@ -2,6 +2,7 @@
 
 import base64
 import datetime
+import io
 import requests
 import pandas as pd
 # import time
