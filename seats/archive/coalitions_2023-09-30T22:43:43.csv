@@ -1,0 +1,7 @@
+name,median,lo,hi,in
+stredopravica,75.0,53,94,1.0
+stredopravica + HLAS,97.0,77,115,1.0
+stredopravica + HLAS bez OĽaNO,83.0,64,102,1.0
+SMER + SNS + HLAS,53.0,35,73,1.0
+pragmatici + nacionalisti + HLAS,75.0,56,97,1.0
+pragmatici + nacionalisti,61.0,45,82,1.0

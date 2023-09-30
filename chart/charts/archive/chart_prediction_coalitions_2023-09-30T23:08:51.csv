@@ -1,0 +1,19 @@
+strana,mandáty,počet,počty mandátov
+stredopravica,Takmer isté,45,Takmer isté: 45
+stredopravica + HLAS,Takmer isté,76,Takmer isté: 76
+stredopravica + HLAS bez OĽaNO,Takmer isté,70,Takmer isté: 70
+SMER + SNS + HLAS,Takmer isté,40,Takmer isté: 40
+pragmatici + nacionalisti + HLAS,Takmer isté,68,Takmer isté: 68
+pragmatici + nacionalisti,Takmer isté,52,Takmer isté: 52
+stredopravica,Pravdepodobné,20,Pravdepodobné: 65 (45+20)
+stredopravica + HLAS,Pravdepodobné,17,Pravdepodobné: 93 (76+17)
+stredopravica + HLAS bez OĽaNO,Pravdepodobné,17,Pravdepodobné: 87 (70+17)
+SMER + SNS + HLAS,Pravdepodobné,17,Pravdepodobné: 57 (40+17)
+pragmatici + nacionalisti + HLAS,Pravdepodobné,17,Pravdepodobné: 85 (68+17)
+pragmatici + nacionalisti,Pravdepodobné,16,Pravdepodobné: 68 (52+16)
+stredopravica,Menej pravdepodobné,17,Menej pravdepodobné: 65 (45+20+17)
+stredopravica + HLAS,Menej pravdepodobné,17,Menej pravdepodobné: 93 (76+17+17)
+stredopravica + HLAS bez OĽaNO,Menej pravdepodobné,17,Menej pravdepodobné: 87 (70+17+17)
+SMER + SNS + HLAS,Menej pravdepodobné,17,Menej pravdepodobné: 57 (40+17+17)
+pragmatici + nacionalisti + HLAS,Menej pravdepodobné,20,Menej pravdepodobné: 85 (68+17+20)
+pragmatici + nacionalisti,Menej pravdepodobné,18,Menej pravdepodobné: 68 (52+16+18)

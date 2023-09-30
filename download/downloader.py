@@ -44,8 +44,8 @@ for f in files:
       with open(path + data_path + f + ".csv", 'wb') as file:
         file.write(r.content)
       # archive
-      with open(path + data_path + "archive/" + f + "_" + t + ".csv", 'wb') as file:
-        file.write(r.content)
+      # with open(path + data_path + "archive/" + f + "_" + t + ".csv") as file:
+      #  file.write(r.content)
     except:
       print("Error: file not CSV.")
       pass
