@@ -438,3 +438,19 @@ item = {
 c = pd.DataFrame([item])
 c.to_csv(path + "estimate/result/counted.csv", index=False)
 c.to_csv(path + "estimate/result/archive/counted.csv", index=False, header=False, mode='a')
+
+# OKRESY estimates
+pt1 = pd.pivot_table(estimates, index=['code'], columns=['id'], values=['votes'], aggfunc='sum')
+pt1.columns = pt1.columns.droplevel(0)
+pt2 = pt1.copy()
+pt1.reset_index(inplace=True)
+pt1.to_csv(path + "estimate/result/okresy_m1.csv")
+pt1.to_csv(path + "estimate/result/archive/okresy_m1_" + t + ".csv")
+
+if counted_percentage > 0:
+  pt2x = pt2.T.merge(results.loc[:, ['id', 'slope']], on='id', how='left')
+  pt2y = pt2x.iloc[:, 1:(len(pt2x.columns) - 1)].multiply(1 + pt2x['slope'] * current_slope, axis=0)
+  pt2 = pt2y.T
+pt2.reset_index(inplace=True)
+pt2.to_csv(path + "estimate/result/okresy_m1s.csv")
+pt2.to_csv(path + "estimate/result/archive/okresy_m1s_" + t + ".csv")
