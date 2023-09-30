@@ -1,26 +1,26 @@
-id,name,abbreviation,color,candidates
-1,Pirátska strana - Slovensko,Piráti,#000000,60
-2,PRINCÍP,PRINCÍP,#B37FCD,70
-3,Progresívne Slovensko,PS,#00b4db,150
-4,SPOLOČNE OBČANIA SLOVENSKA,SOS,#139A01,148
-5,"OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",OĽaNO,#61A229,150
-6,Komunistická strana Slovenska,KSS,#bb0000,81
-7,"Maďarské fórum, Občianski demokrati Slovenska, Za regióny, Rómska koalícia, Demokratická strana",Maďarské fórum,#7AB9FC,125
-8,Vlastenecký blok,Vlastenecký blok,#F29E33,41
-9,"Modrí, Most - Híd",Modrí,#0000bb,149
-10,SPRAVODLIVOSŤ,SPRAVODLIVOSŤ,#BF6075,27
-11,Slovenské Hnutie Obrody,SHO,#AC7D19,45
-12,Sloboda a Solidarita,SaS,#b4c800,150
-13,SME RODINA,SME Rodina,#011b3a,150
-14,MySlovensko,MySlovensko,#2E91AA,49
-15,Slovenská národná strana,SNS,#FF0101,150
-16,SMER - sociálna demokracia,SMER-SD,#ee3a43,150
-17,HLAS - sociálna demokracia,HLAS-SD,#8A2C51,150
-18,SZÖVETSÉG - Magyarok. Nemzetiségek. Regiók. | ALIANCIA - Maďari. Národnosti. Regióny,Aliancia,#043927,149
-19,SRDCE vlastenci a dôchodcovia - SLOVENSKÁ NÁRODNÁ JEDNOTA,SRDCE - SNJ,#F2CF53,100
-20,SDKÚ - DS - Slovenská demokratická a kresťanská únia - Demokratická strana,SDKÚ - DS,#905297,11
-21,Kotlebovci - Ľudová strana Naše Slovensko,ĽSNS,#00521E,150
-22,Demokrati,Demokrati,#2b57f1,150
-23,Kresťanskodemokratické hnutie,KDH,#00528c,150
-24,KARMA,KARMA,#E48F71,17
-25,REPUBLIKA,Republika,#993300,150
+id,name,abbreviation,color,candidates,
+1,Pirátska strana - Slovensko,Piráti,#000000,60,
+2,PRINCÍP,PRINCÍP,#B37FCD,70,
+3,Progresívne Slovensko,PS,#00b4db,150,
+4,SPOLOČNE OBČANIA SLOVENSKA,SOS,#139A01,148,
+5,"OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",OĽaNO,#61A229,150,
+6,Komunistická strana Slovenska,KSS,#bb0000,81,
+7,"Maďarské fórum, Občianski demokrati Slovenska, Za regióny, Rómska koalícia, Demokratická strana",Maďarské fórum,#7AB9FC,125,
+8,Vlastenecký blok,Vlastenecký blok,#F29E33,41,
+9,"Modrí, Most - Híd",Modrí,#0000bb,149,
+10,SPRAVODLIVOSŤ,SPRAVODLIVOSŤ,#BF6075,27,
+11,Slovenské Hnutie Obrody,SHO,#AC7D19,45,
+12,Sloboda a Solidarita,SaS,#b4c800,150,
+13,SME RODINA,SME Rodina,#011b3a,150,
+14,MySlovensko,MySlovensko,#2E91AA,49,
+15,Slovenská národná strana,SNS,#FF0101,150,
+16,SMER - sociálna demokracia,SMER-SD,#ee3a43,150,
+17,HLAS - sociálna demokracia,HLAS-SD,#8A2C51,150,
+18,SZÖVETSÉG - Magyarok. Nemzetiségek. Regiók. ALIANCIA - Maďari. Národnosti. Regióny,Aliancia,#043927,149
+19,SRDCE vlastenci a dôchodcovia - SLOVENSKÁ NÁRODNÁ JEDNOTA,SRDCE - SNJ,#F2CF53,100,
+20,SDKÚ - DS - Slovenská demokratická a kresťanská únia - Demokratická strana,SDKÚ - DS,#905297,11,
+21,Kotlebovci - Ľudová strana Naše Slovensko,ĽSNS,#00521E,150,
+22,Demokrati,Demokrati,#2b57f1,150,
+23,Kresťanskodemokratické hnutie,KDH,#00528c,150,
+24,KARMA,KARMA,#E48F71,17,
+25,REPUBLIKA,Republika,#993300,150,

@@ -16,6 +16,41 @@ counted = pd.read_csv(path + "estimate/result/counted.csv")
 
 runs = 1000
 
+# possible coalitions
+# 1	Piráti
+# 2	PRINCÍP
+# 3	PS
+# 4	SOS
+# 5	OĽaNO
+# 6	KSS
+# 7	Maďarské fórum
+# 8	Vlastenecký blok
+# 9	Modrí
+# 10	SPRAVODLIVOSŤ
+# 11	SHO
+# 12	SaS
+# 13	SME Rodina
+# 14	MySlovensko
+# 15	SNS
+# 16	SMER-SD
+# 17	HLAS-SD
+# 18	Aliancia
+# 19	SRDCE - SNJ
+# 20	SDKÚ - DS
+# 21	ĽSNS
+# 22	Demokrati
+# 23	KDH
+# 24	KARMA
+# 25	Republika
+possible_coalitions = [
+  {'name': 'stredopravica', 'ids': [3, 5, 12, 13, 22, 23]},
+  {'name': 'stredopravica + HLAS', 'ids': [3, 5, 12, 13, 17, 22, 23]},
+  {'name': 'stredopravica + HLAS bez OĽaNO', 'ids': [3, 12, 13, 17, 22, 23]},
+  {'name': 'SMER + SNS + HLAS', 'ids': [15, 16, 25]},
+  {'name': 'pragmatici + nacionalisti + HLAS', 'ids': [15, 16, 17, 25]},
+  {'name': 'pragmatici + nacionalisti', 'ids': [15, 16, 17]},
+]
+
 # get mus, calculate standard deviation from interval
 coef95 = intervals[intervals['x'] <= counted['counted'][0]]['y'].tolist()[-1]
 mus = results['sloped_percentage']
@@ -73,6 +108,22 @@ stats = stats.merge(hb['seats'], on='id', how='left', suffixes=("", "_hb"))
 
 # save
 stats.to_csv(path + "seats/stats.csv", index=True)
-
 t = datetime.datetime.now().isoformat(timespec='seconds')
 stats.to_csv(path + "seats/archive/stats_" + t + ".csv", index=True)
+
+# coalitions
+coalitions = pd.DataFrame(columns=['name', 'median', 'lo', 'hi', 'in'])
+for c in possible_coalitions:
+  e = estimates.loc[:, c['ids']]
+  item = {
+    'name': c['name'],
+    'median': e.sum(axis=1).median(),
+    'lo': e.sum(axis=1).quantile(q=0.025, interpolation='nearest'),
+    'hi': e.sum(axis=1).quantile(q=0.975, interpolation='nearest'),
+    'in': (e.sum(axis=1) > 0).sum() / runs
+  }
+  coalitions = pd.concat([coalitions, pd.DataFrame(item, index=[0])], ignore_index=True)
+
+# save
+coalitions.to_csv(path + "seats/coalitions.csv", index=False)
+coalitions.to_csv(path + "seats/archive/coalitions_" + t + ".csv", index=False)

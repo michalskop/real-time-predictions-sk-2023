@@ -6,7 +6,7 @@ import pandas as pd
 
 sheetkey = "1S-Jah-eOdCKPH49w_AJYqanD8aYDrgnIvv4LKQTRkf8"
 
-path = "/home/michal/dev/sk2023/real-time/2023/"
+path = "/home/michal/dev/sk2023/real-time-predictions-sk-2023/"
 
 # connect
 gc = gspread.service_account()
