@@ -5,12 +5,12 @@ import math
 import numpy as np
 import pandas as pd
 
-path = "/home/michal/dev/sk2023/real-time/2023/"
+path = "/home/michal/dev/sk2023/real-time-predictions-sk-2023/"
 
 # load data
 results = pd.read_csv(path + "estimate/result/results.csv")
 results.index = results['id']
-intervals = pd.read_csv(path + "seats/interval_model1.csv")
+intervals = pd.read_csv(path + "estimate/interval_model1.csv") # model errors
 choices = pd.read_csv(path + "estimate/initial_estimates.csv")
 counted = pd.read_csv(path + "estimate/result/counted.csv")
 

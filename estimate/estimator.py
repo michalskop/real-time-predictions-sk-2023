@@ -22,6 +22,8 @@ initial_estimates = pd.read_csv(path + "estimate/initial_estimates.csv")
 distance_matrix = pd.read_csv(path + "estimate/distance_matrix.csv")
 parties = pd.read_csv(path + "estimate/parties.csv")
 slope = pd.read_csv(path + "estimate/slope.csv")
+intervals1 = pd.read_csv(path + "estimate/interval_model1.csv") # model errors
+intervals1s = pd.read_csv(path + "estimate/interval_model1s.csv") # model errors
 
 # read current data
 
@@ -409,8 +411,18 @@ results['sloped_percentage'] = results['percentage'] * (1 + results['slope'] * c
 # recalculate to 100%
 results['sloped_percentage'] = results['sloped_percentage'] / results['sloped_percentage'].sum() * 100
 
+# ADD INTERVALS
+# note: adding intervals1 to both results and results_sloped
+# for results_sloped "just in case"
+coef95 = intervals1[intervals1['x'] <= counted['counted'][0]]['y'].tolist()[-1]
+coef95s = intervals1[intervals1['x'] <= counted['counted'][0]]['y'].tolist()[-1] # for sloped intervals1s or conservative intervals1
+results['lo'] = results['percentage'] / (1 + coef95)
+results['hi'] = results['percentage'] * (1 + coef95)
+results['sloped_lo'] = results['sloped_percentage'] / (1 + coef95s)
+results['sloped_hi'] = results['sloped_percentage'] * (1 + coef95s)
+
 # save results
-r = results.loc[:, ['id', 'votes', 'percentage', 'sloped_percentage']].merge(parties.loc[:, ['id', 'abbreviation']], on='id', how='left')
+r = results.loc[:, ['id', 'votes', 'percentage', 'sloped_percentage', 'lo', 'hi', 'sloped_lo', 'sloped_hi']].merge(parties.loc[:, ['id', 'abbreviation']], on='id', how='left')
 r.to_csv(path + "estimate/result/results.csv", index=False)
 t = datetime.datetime.now().isoformat(timespec='seconds')
 r.to_csv(path + "estimate/result/archive/results_" + t + ".csv", index=False)
