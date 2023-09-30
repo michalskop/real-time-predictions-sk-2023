@@ -42,6 +42,8 @@ if (model1['sloped_percentage'].sum() > 75) & (model1['sloped_percentage'].sum()
   ws.update('A1', history)
 
   models['model 1s'] = round(p['sloped_percentage'], 2).tolist()
+  models['model 1s lo'] = round(p['sloped_lo'], 2).tolist()
+  models['model 1s hi'] = round(p['sloped_hi'], 2).tolist()
 
   # model 1
   ws = sh.worksheet("model 1")
@@ -52,6 +54,8 @@ if (model1['sloped_percentage'].sum() > 75) & (model1['sloped_percentage'].sum()
   ws.update('A1', history)
 
   models['model 1'] = round(p['percentage'], 2).tolist()
+  models['model 1 lo'] = round(p['lo'], 2).tolist()
+  models['model 1 hi'] = round(p['hi'], 2).tolist()
 
 
 # model 0
