@@ -1,0 +1,81 @@
+KRAJ|NKRAJ|OBVOD|NOBVOD|OKRES|NOKRES|P_ALL_OKRSOK
+1|"Bratislavský kraj"|101|"Bratislava"|101|"Bratislava I"|34
+1|"Bratislavský kraj"|101|"Bratislava"|102|"Bratislava II"|102
+1|"Bratislavský kraj"|101|"Bratislava"|103|"Bratislava III"|69
+1|"Bratislavský kraj"|101|"Bratislava"|104|"Bratislava IV"|90
+1|"Bratislavský kraj"|101|"Bratislava"|105|"Bratislava V"|103
+1|"Bratislavský kraj"|102|"Malacky"|106|"Malacky"|59
+1|"Bratislavský kraj"|103|"Pezinok"|107|"Pezinok"|54
+1|"Bratislavský kraj"|104|"Senec"|108|"Senec"|76
+2|"Trnavský kraj"|201|"Dunajská Streda"|201|"Dunajská Streda"|127
+2|"Trnavský kraj"|202|"Galanta"|202|"Galanta"|84
+2|"Trnavský kraj"|203|"Piešťany"|204|"Piešťany"|63
+2|"Trnavský kraj"|204|"Senica"|205|"Senica"|53
+2|"Trnavský kraj"|204|"Senica"|206|"Skalica"|44
+2|"Trnavský kraj"|205|"Trnava"|203|"Hlohovec"|46
+2|"Trnavský kraj"|205|"Trnava"|207|"Trnava"|113
+3|"Trenčiansky kraj"|301|"Bánovce nad Bebravou"|301|"Bánovce nad Bebravou"|62
+3|"Trenčiansky kraj"|302|"Nové Mesto nad Váhom"|303|"Myjava"|32
+3|"Trenčiansky kraj"|302|"Nové Mesto nad Váhom"|304|"Nové Mesto nad Váhom"|67
+3|"Trenčiansky kraj"|303|"Považská Bystrica"|306|"Považská Bystrica"|71
+3|"Trenčiansky kraj"|303|"Považská Bystrica"|308|"Púchov"|53
+3|"Trenčiansky kraj"|304|"Prievidza"|305|"Partizánske"|50
+3|"Trenčiansky kraj"|304|"Prievidza"|307|"Prievidza"|135
+3|"Trenčiansky kraj"|305|"Trenčín"|302|"Ilava"|60
+3|"Trenčiansky kraj"|305|"Trenčín"|309|"Trenčín"|116
+4|"Nitriansky kraj"|401|"Komárno"|401|"Komárno"|108
+4|"Nitriansky kraj"|402|"Levice"|402|"Levice"|162
+4|"Nitriansky kraj"|403|"Nitra"|403|"Nitra"|165
+4|"Nitriansky kraj"|403|"Nitra"|407|"Zlaté Moravce"|46
+4|"Nitriansky kraj"|404|"Nové Zámky"|404|"Nové Zámky"|136
+4|"Nitriansky kraj"|405|"Šaľa"|405|"Šaľa"|42
+4|"Nitriansky kraj"|406|"Topoľčany"|406|"Topoľčany"|88
+5|"Žilinský kraj"|501|"Čadca"|502|"Čadca"|77
+5|"Žilinský kraj"|502|"Dolný Kubín"|503|"Dolný Kubín"|43
+5|"Žilinský kraj"|503|"Liptovský Mikuláš"|505|"Liptovský Mikuláš"|96
+5|"Žilinský kraj"|504|"Martin"|506|"Martin"|106
+5|"Žilinský kraj"|504|"Martin"|509|"Turčianske Teplice"|32
+5|"Žilinský kraj"|505|"Námestovo"|507|"Námestovo"|50
+5|"Žilinský kraj"|505|"Námestovo"|510|"Tvrdošín"|32
+5|"Žilinský kraj"|506|"Ružomberok"|508|"Ružomberok"|59
+5|"Žilinský kraj"|507|"Žilina"|501|"Bytča"|34
+5|"Žilinský kraj"|507|"Žilina"|504|"Kysucké Nové Mesto"|28
+5|"Žilinský kraj"|507|"Žilina"|511|"Žilina"|159
+6|"Banskobystrický kraj"|601|"Banská Bystrica"|601|"Banská Bystrica"|130
+6|"Banskobystrický kraj"|602|"Brezno"|603|"Brezno"|66
+6|"Banskobystrický kraj"|603|"Lučenec"|606|"Lučenec"|97
+6|"Banskobystrický kraj"|603|"Lučenec"|607|"Poltár"|37
+6|"Banskobystrický kraj"|604|"Rimavská Sobota"|608|"Revúca"|66
+6|"Banskobystrický kraj"|604|"Rimavská Sobota"|609|"Rimavská Sobota"|151
+6|"Banskobystrický kraj"|605|"Veľký Krtíš"|610|"Veľký Krtíš"|83
+6|"Banskobystrický kraj"|606|"Zvolen"|604|"Detva"|44
+6|"Banskobystrický kraj"|606|"Zvolen"|605|"Krupina"|45
+6|"Banskobystrický kraj"|606|"Zvolen"|611|"Zvolen"|75
+6|"Banskobystrický kraj"|607|"Žiar nad Hronom"|602|"Banská Štiavnica"|23
+6|"Banskobystrický kraj"|607|"Žiar nad Hronom"|612|"Žarnovica"|35
+6|"Banskobystrický kraj"|607|"Žiar nad Hronom"|613|"Žiar nad Hronom"|56
+7|"Prešovský kraj"|701|"Bardejov"|701|"Bardejov"|116
+7|"Prešovský kraj"|702|"Humenné"|702|"Humenné"|87
+7|"Prešovský kraj"|702|"Humenné"|705|"Medzilaborce"|30
+7|"Prešovský kraj"|702|"Humenné"|709|"Snina"|48
+7|"Prešovský kraj"|703|"Kežmarok"|703|"Kežmarok"|68
+7|"Prešovský kraj"|704|"Poprad"|704|"Levoča"|47
+7|"Prešovský kraj"|704|"Poprad"|706|"Poprad"|93
+7|"Prešovský kraj"|705|"Prešov"|707|"Prešov"|170
+7|"Prešovský kraj"|705|"Prešov"|708|"Sabinov"|63
+7|"Prešovský kraj"|706|"Stará Ľubovňa"|710|"Stará Ľubovňa"|62
+7|"Prešovský kraj"|707|"Stropkov"|711|"Stropkov"|52
+7|"Prešovský kraj"|708|"Svidník"|712|"Svidník"|78
+7|"Prešovský kraj"|709|"Vranov nad Topľou"|713|"Vranov nad Topľou"|93
+8|"Košický kraj"|801|"Košice"|802|"Košice I"|59
+8|"Košický kraj"|801|"Košice"|803|"Košice II"|60
+8|"Košický kraj"|801|"Košice"|804|"Košice III"|22
+8|"Košický kraj"|801|"Košice"|805|"Košice IV"|52
+8|"Košický kraj"|802|"Košice - okolie"|806|"Košice - okolie"|149
+8|"Košický kraj"|803|"Michalovce"|807|"Michalovce"|131
+8|"Košický kraj"|803|"Michalovce"|809|"Sobrance"|52
+8|"Košický kraj"|804|"Rožňava"|808|"Rožňava"|88
+8|"Košický kraj"|805|"Spišská Nová Ves"|801|"Gelnica"|32
+8|"Košický kraj"|805|"Spišská Nová Ves"|810|"Spišská Nová Ves"|82
+8|"Košický kraj"|806|"Trebišov"|811|"Trebišov"|128
+9|"Cudzina"|900|"Cudzina"|900|"Cudzina"|18

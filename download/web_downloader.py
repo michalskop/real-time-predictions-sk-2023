@@ -13,7 +13,7 @@ base_url = "https://volby.statistics.sk/nrsr/nrsr2020/json/"
 url1 = "graph01d/"
 url2 = "tab02d/"
 
-path = "/home/michal/dev/sk2023/real-time/2023/download/"
+path = "/home/michal/dev/sk2023/real-time-predictions-sk-2023/download/"
 
 out_ps = []
 
