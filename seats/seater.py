@@ -127,3 +127,5 @@ for c in possible_coalitions:
 # save
 coalitions.to_csv(path + "seats/coalitions.csv", index=False)
 coalitions.to_csv(path + "seats/archive/coalitions_" + t + ".csv", index=False)
+
+print("Seats done.")

@@ -469,3 +469,5 @@ if counted_percentage > 0:
 pt2.reset_index(inplace=True)
 pt2.to_csv(path + "estimate/result/okresy_m1s.csv")
 pt2.to_csv(path + "estimate/result/archive/okresy_m1s_" + t + ".csv")
+
+print("Estimation done.")

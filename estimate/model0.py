@@ -23,3 +23,5 @@ results['id'] = results.index
 results.to_csv(path + "estimate/result/model0.csv", index=False)
 t = datetime.datetime.now().isoformat(timespec='seconds')
 results.to_csv(path + "estimate/result/archive/model0_" + t + ".csv", index=False)
+
+print("Model 0 done.")

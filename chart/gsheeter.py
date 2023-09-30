@@ -77,3 +77,5 @@ models['abbreviation'] = parties['abbreviation'].tolist()
 models = models.fillna('')
 models = models.astype(str)
 ws.update([models.columns.values.tolist()] + models.values.tolist())
+
+print("GSheets updated.")

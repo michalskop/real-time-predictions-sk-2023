@@ -106,3 +106,5 @@ if (coalitions['hi'].sum() > 100):
   # save to CSV
   chart3.to_csv(path + "chart/charts/chart_prediction_coalitions.csv", index=False)
   chart3.to_csv(path + "chart/charts/archive/chart_prediction_coalitions_" + t + ".csv", index=False)
+
+print("Charts done.")
