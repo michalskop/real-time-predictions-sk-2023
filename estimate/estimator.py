@@ -389,8 +389,9 @@ else:
   dfabroad['code'] = 900
 
 # append to estimates
-t = dfabroad.loc[:, ['code', 'id', 'current_estimate_votes']].rename(columns={'current_estimate_votes': 'votes'})
-estimates = pd.concat([estimates, t], ignore_index=True)
+tabroad = dfabroad.loc[:, ['code', 'id', 'current_estimate_votes']].rename(columns={'current_estimate_votes': 'votes'})
+estimates_900 = estimates.copy()
+estimates = pd.concat([estimates, tabroad], ignore_index=True)
 
 
 # SUMMARIZE
@@ -401,24 +402,38 @@ results['percentage'] = results['votes'] / results['votes'].sum() * 100
 
 
 # SLOPE CORRECTION
+# correct only part without 900
 # get slope
 counted_percentage = current_overview['P_OKRSOK'].sum() / initial_weights['polling_stations'].sum() * 100
 current_slope = slope[slope['x'] >= counted_percentage].head(1)['y'].values[0]
 
 # correct results
 if counted_percentage > 0:
-  results = results.merge(initial_estimates.loc[:, ['id', 'slope']], on='id', how='left')
-  results['sloped_percentage'] = results['percentage'] * (1 + results['slope'] * current_slope)
-  # recalculate to 100%
-  results['sloped_percentage'] = results['sloped_percentage'] / results['sloped_percentage'].sum() * 100
+  estimates_900 = estimates_900.merge(initial_estimates.loc[:, ['id', 'slope']], on='id', how='left')
+  estimates_900['sloped_votes'] = estimates_900['votes'] * (1 + estimates_900['slope'] * current_slope)
+  # add 900
+  estimates_900 = pd.concat([estimates_900, tabroad], ignore_index=True)
+  # fill NA with votes
+  estimates_900['sloped_votes'] = estimates_900['sloped_votes'].fillna(estimates_900['votes'])
+
+  # Summarize
+  results_900 = estimates_900.groupby(['id'])['sloped_votes'].sum().reset_index()
+  # add percentage
+  results_900['sloped_percentage'] = results_900['sloped_votes'] / results_900['sloped_votes'].sum() * 100
+  # merge to get slope
+  results_900 = results_900.merge(initial_estimates.loc[:, ['id', 'slope']], on='id', how='left')
+
+  # merge with results
+  results = results.merge(results_900, on='id', how='left')
+
 else:
   results['sloped_percentage'] = results['percentage']
 
 # ADD INTERVALS
 # note: adding intervals1 to both results and results_sloped
 # for results_sloped "just in case"
-coef95 = intervals1[intervals1['x'] <= counted['counted'][0]]['y'].tolist()[-1]
-coef95s = intervals1[intervals1['x'] <= counted['counted'][0]]['y'].tolist()[-1] # for sloped intervals1s or conservative intervals1
+coef95 = intervals1[intervals1['x'] <= counted_percentage]['y'].tolist()[-1]
+coef95s = intervals1[intervals1['x'] <= counted_percentage]['y'].tolist()[-1] # for sloped intervals1s or conservative intervals1
 results['lo'] = results['percentage'] / (1 + coef95)
 results['hi'] = results['percentage'] * (1 + coef95)
 results['sloped_lo'] = results['sloped_percentage'] / (1 + coef95s)
