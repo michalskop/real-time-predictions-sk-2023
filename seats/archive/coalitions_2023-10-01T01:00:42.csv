@@ -1,5 +1,5 @@
 name,median,lo,hi,in
-stredopravica,70.0,61,80,1.0
+stredopravica,70.0,60,81,1.0
 stredopravica + HLAS,96.0,85,109,1.0
 stredopravica + HLAS bez OĽaNO,78.0,68,89,1.0
 SMER + SNS + HLAS,49.0,37,60,1.0

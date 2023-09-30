@@ -1,19 +1,19 @@
 strana,mandáty,počet,počty mandátov
-stredopravica,Takmer isté,61,Takmer isté: 61
+stredopravica,Takmer isté,60,Takmer isté: 60
 stredopravica + HLAS,Takmer isté,85,Takmer isté: 85
-stredopravica + HLAS bez OĽaNO,Takmer isté,68,Takmer isté: 68
-SMER + SNS + HLAS,Takmer isté,37,Takmer isté: 37
+stredopravica + HLAS bez OĽaNO,Takmer isté,67,Takmer isté: 67
+SMER + SNS + HLAS,Takmer isté,38,Takmer isté: 38
 pragmatici + nacionalisti + HLAS,Takmer isté,65,Takmer isté: 65
 pragmatici + nacionalisti,Takmer isté,62,Takmer isté: 62
-stredopravica,Pravdepodobné,9,Pravdepodobné: 70 (61+9)
+stredopravica,Pravdepodobné,10,Pravdepodobné: 70 (60+10)
 stredopravica + HLAS,Pravdepodobné,11,Pravdepodobné: 96 (85+11)
-stredopravica + HLAS bez OĽaNO,Pravdepodobné,10,Pravdepodobné: 78 (68+10)
-SMER + SNS + HLAS,Pravdepodobné,12,Pravdepodobné: 49 (37+12)
+stredopravica + HLAS bez OĽaNO,Pravdepodobné,10,Pravdepodobné: 77 (67+10)
+SMER + SNS + HLAS,Pravdepodobné,11,Pravdepodobné: 49 (38+11)
 pragmatici + nacionalisti + HLAS,Pravdepodobné,10,Pravdepodobné: 75 (65+10)
 pragmatici + nacionalisti,Pravdepodobné,10,Pravdepodobné: 72 (62+10)
-stredopravica,Menej pravdepodobné,10,Menej pravdepodobné: 80 (61+9+10)
+stredopravica,Menej pravdepodobné,11,Menej pravdepodobné: 81 (60+10+11)
 stredopravica + HLAS,Menej pravdepodobné,13,Menej pravdepodobné: 109 (85+11+13)
-stredopravica + HLAS bez OĽaNO,Menej pravdepodobné,11,Menej pravdepodobné: 89 (68+10+11)
-SMER + SNS + HLAS,Menej pravdepodobné,11,Menej pravdepodobné: 60 (37+12+11)
+stredopravica + HLAS bez OĽaNO,Menej pravdepodobné,11,Menej pravdepodobné: 88 (67+10+11)
+SMER + SNS + HLAS,Menej pravdepodobné,10,Menej pravdepodobné: 59 (38+11+10)
 pragmatici + nacionalisti + HLAS,Menej pravdepodobné,11,Menej pravdepodobné: 86 (65+10+11)
 pragmatici + nacionalisti,Menej pravdepodobné,10,Menej pravdepodobné: 82 (62+10+10)
