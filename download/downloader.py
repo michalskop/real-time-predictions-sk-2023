@@ -40,12 +40,18 @@ for f in files:
   if r.status_code == 200:
     # save only if correct CSV
     try:
-      x = pd.read_csv(path + data_path + f + ".csv", sep="|")
-      with open(path + data_path + f + ".csv", 'wb') as file:
-        file.write(r.content)
+      x = pd.read_csv(io.StringIO(r.content.decode('utf-8')), sep="|")
+      x.to_csv(path + data_path + f + ".csv", index=False, sep="|")
       # archive
-      # with open(path + data_path + "archive/" + f + "_" + t + ".csv") as file:
-      #  file.write(r.content)
+      x.to_csv(path + data_path + "archive/" + f + "_" + t + ".csv", index=False, sep="|")
+
+      # x = pd.read_csv(path + data_path + f + ".csv", sep="|")
+      # with open(path + data_path + f + ".csv", 'wb') as file:
+      #   print("ok 1")
+      #   # file.write(r.content)
+      # # archive
+      # with open(path + data_path + "archive/" + f + "_" + t + ".csv", 'wb') as file:
+      #   file.write(r.content)
     except:
       print("Error: file not CSV.")
       pass
