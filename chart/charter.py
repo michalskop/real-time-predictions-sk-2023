@@ -75,7 +75,7 @@ if (seats['hi'].sum() > 140) & (seats['lo'].sum() >= 0):
 coalitions = pd.read_csv(path + "seats/coalitions.csv")
 coalitions['median'] = coalitions['median'].round().astype('int')
 # condition / test
-if (coalitions['hi'] > 100):
+if (coalitions['hi'].sum() > 100):
   # prepare data for chart
   chart3 = pd.DataFrame(columns=['strana', 'mandáty', 'počet', 'počty mandátov'])
 
