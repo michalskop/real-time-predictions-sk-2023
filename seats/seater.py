@@ -47,7 +47,7 @@ possible_coalitions = [
   {'name': 'stredopravica + HLAS', 'ids': [3, 5, 12, 13, 17, 22, 23]},
   {'name': 'stredopravica + HLAS bez OĽaNO', 'ids': [3, 12, 13, 17, 22, 23]},
   {'name': 'SMER + SNS + HLAS', 'ids': [15, 16, 17]},
-  {'name': 'pragmatici + nacionalisti + HLAS', 'ids': [15, 16, 17, 25]},
+  {'name': 'SMER + HLAS + KDH', 'ids': [16, 17, 23]},
   {'name': 'pragmatici + nacionalisti', 'ids': [15, 16, 25]},
 ]
 
