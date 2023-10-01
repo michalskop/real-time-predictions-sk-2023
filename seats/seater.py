@@ -43,12 +43,12 @@ runs = 1000
 # 24	KARMA
 # 25	Republika
 possible_coalitions = [
-  {'name': 'stredopravica', 'ids': [3, 5, 12, 13, 22, 23]},
+  {'name': 'PS + OĽaNO + KDH + SaS', 'ids': [3, 5, 12, 13, 22, 23]},
   {'name': 'stredopravica + HLAS', 'ids': [3, 5, 12, 13, 17, 22, 23]},
   {'name': 'stredopravica + HLAS bez OĽaNO', 'ids': [3, 12, 13, 17, 22, 23]},
   {'name': 'SMER + SNS + HLAS', 'ids': [15, 16, 17]},
   {'name': 'SMER + HLAS + KDH', 'ids': [16, 17, 23]},
-  {'name': 'pragmatici + nacionalisti', 'ids': [15, 16, 25]},
+  {'name': 'SMER + SNS', 'ids': [15, 16, 25]},
 ]
 
 # get mus, calculate standard deviation from interval
